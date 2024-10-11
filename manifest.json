@@ -1,0 +1,15 @@
+{
+    "name": "JobApply Autofill",
+    "author": "Maor Bezalel",
+    "description": "Automatically fills job application forms with your saved information, saving you time on repetitive entries.",
+
+    "manifest_version": 3,
+    "version": "1.0.0",
+
+    "host_permissions": ["*://*/*"],
+    "permissions": ["scripting", "contextMenus", "storage", "activeTab"],
+
+    "action": {
+        "default_popup": "views/popup.html"
+    }
+}

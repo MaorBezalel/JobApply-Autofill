@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/info-form.css" />
+        <title>JobApply Autofill</title>
+    </head>
+    <body>
+        <h1 class="title">JobApply Autofill</h1>
+        <p class="description">
+            Fill out and save the information that you want to autofill in job applications.
+        </p>
+        <form id="form--edit-info" class="form">
+            <!-- --------------------------First Name*---------------------------- -->
+            <label class="label required" for="input--first-name">First Name</label>
+            <input id="input--first-name" type="text" name="firstName" required />
+            <!-- ----------------------------------------------------------------- -->
+
+            <!-- --------------------------Last Name*---------------------------- -->
+            <label class="label required" for="input--last-name">Last Name</label>
+            <input id="input--last-name" type="text" name="lastName" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------First Name (Hebrew)*---------------------- -->
+            <label class="label required" for="input--first-name-hebrew">First Name (Hebrew)</label>
+            <input id="input--first-name-hebrew" type="text" name="firstNameHebrew" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------Last Name (Hebrew)*----------------------- -->
+            <label class="label required" for="input--last-name-hebrew">Last Name (Hebrew)</label>
+            <input id="input--last-name-hebrew" type="text" name="lastNameHebrew" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ---------------------------Email*------------------------------- -->
+            <label class="label required" for="input--email">Email</label>
+            <input id="input--email" type="email" name="email" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------Phone*------------------------------ -->
+            <label class="label required" for="input--phone">Phone</label>
+            <input id="input--phone" type="tel" name="phone" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------Street------------------------------ -->
+            <label class="label" for="input--street">Street</label>
+            <input id="input--street" type="text" name="street" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------City*------------------------------- -->
+            <label class="label required" for="input--city">City</label>
+            <input id="input--city" type="text" name="city" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------Country*---------------------------- -->
+            <label class="label required" for="input--country">Country</label>
+            <input id="input--country" type="text" name="country" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------State------------------------------- -->
+            <label class="label" for="input--state">State</label>
+            <input id="input--state" type="text" name="state" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- -------------------------Postal Code-----------===-------------- -->
+            <label class="label" for="input--postal-code">Postal Code</label>
+            <input id="input--postal-code" type="text" name="postalCode" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------LinkedIn---------------------------- -->
+            <label class="label" for="input--linkedin">LinkedIn</label>
+            <input id="input--linkedin" type="url" name="linkedin" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------GitHub------------------------------ -->
+            <label class="label" for="input--github">GitHub</label>
+            <input id="input--github" type="url" name="github" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------Portfolio---------------------------- -->
+            <label class="label" for="input--portfolio">Portfolio</label>
+            <input id="input--portfolio" type="url" name="portfolio" />
+            <!-- ---------------------------------------------------------------- -->
+
+            <!-- ----------------------------CV/Resume*-------------------------- -->
+            <label class="label required" for="input--cv">CV/Resume</label>
+            <input id="input--cv" type="file" name="cv" accept=".doc,.docx,.pdf" required />
+            <!-- ---------------------------------------------------------------- -->
+
+            <button id="btn--save-info" class="btn" type="submit">Save Info</button>
+        </form>
+        <script src="../scripts/form-handler.js" type="module"></script>
+    </body>
+</html>
