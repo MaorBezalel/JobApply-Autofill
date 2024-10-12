@@ -16,6 +16,8 @@ function getInputFieldAttributesThatWillBeChecked(inputField) {
 
 document.getElementById("btn--autofill-info").addEventListener("click", async () => {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+    // Execute the autofill script in the active job application tab
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
         files: ["scripts/autofill.js"],
@@ -30,6 +32,7 @@ document.getElementById("btn--edit-info").addEventListener("click", () => {
     const left = Math.round((window.screen.width - width) / 2);
     const top = Math.round((window.screen.height - height) / 2);
 
+    // Open the info form in a new window
     chrome.windows.create({
         url: "../views/info-form.html",
         type: "popup",
