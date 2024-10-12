@@ -1,5 +1,6 @@
 /**
  * Get attributes of an input field that will be checked.
+ *
  * @param {HTMLInputElement} inputField
  * @returns {Object} Attributes of the input field.
  */

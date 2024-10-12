@@ -36,7 +36,6 @@ function base64ToFile(base64, filename, mimeType) {
  *
  * @param {HTMLInputElement} input The input field
  * @param {Object} info The saved data
- * @returns {void}
  */
 function populateInputField(input, info) {
     if (input.type === "file") {
@@ -91,12 +90,15 @@ async function handleFileInputs(fileInputs, formData, data) {
 async function saveFormData(e) {
     e.preventDefault();
 
+    // Get the form data
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
+    // Handle file inputs
     const fileInputs = e.target.querySelectorAll('input[type="file"]');
     await handleFileInputs(fileInputs, formData, data);
 
+    // Save the iser's information data
     chrome.storage.local.set({ info: data });
 
     window.close();
