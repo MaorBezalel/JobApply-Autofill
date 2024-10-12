@@ -1,6 +1,7 @@
 /**
- *
+ * Get attributes of an input field that will be checked.
  * @param {HTMLInputElement} inputField
+ * @returns {Object} Attributes of the input field.
  */
 function getInputFieldAttributesThatWillBeChecked(inputField) {
     return {
@@ -14,7 +15,10 @@ function getInputFieldAttributesThatWillBeChecked(inputField) {
     };
 }
 
-document.getElementById("btn--autofill-info").addEventListener("click", async () => {
+/**
+ * Handle the autofill button click event.
+ */
+async function handleAutofillButtonClick() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
     // Execute the autofill script in the active job application tab
@@ -22,9 +26,12 @@ document.getElementById("btn--autofill-info").addEventListener("click", async ()
         target: { tabId: tab.id },
         files: ["scripts/autofill.js"],
     });
-});
+}
 
-document.getElementById("btn--edit-info").addEventListener("click", () => {
+/**
+ * Handle the edit info button click event.
+ */
+function handleEditInfoButtonClick() {
     const width = 800;
     const height = 500;
 
@@ -41,4 +48,8 @@ document.getElementById("btn--edit-info").addEventListener("click", () => {
         left,
         top,
     });
-});
+}
+
+// Add event listeners to buttons
+document.getElementById("btn--autofill-info").addEventListener("click", handleAutofillButtonClick);
+document.getElementById("btn--edit-info").addEventListener("click", handleEditInfoButtonClick);
