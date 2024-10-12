@@ -7,88 +7,113 @@
         <title>JobApply Autofill</title>
     </head>
     <body>
-        <h1 class="title">JobApply Autofill</h1>
-        <p class="description">
-            Fill out and save the information that you want to autofill in job applications.
-        </p>
-        <form id="form--edit-info" class="form">
-            <!-- --------------------------First Name*---------------------------- -->
-            <label class="label required" for="input--first-name">First Name</label>
-            <input id="input--first-name" type="text" name="firstName" required />
-            <!-- ----------------------------------------------------------------- -->
+        <main class="info-form">
+            <h1 class="info-form__title">JobApply Edit Info</h1>
+            <p class="info-form__description">Fill out and save the information that you want to autofill in job applications.</p>
+            <form id="form--info-form" class="form">
+                <!-- --------------------------First Name*---------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--first-name">
+                    <label class="label required" for="input--first-name">First Name</label>
+                    <input id="input--first-name" type="text" name="firstName" required />
+                </div>
+                <!-- ----------------------------------------------------------------- -->
 
-            <!-- --------------------------Last Name*---------------------------- -->
-            <label class="label required" for="input--last-name">Last Name</label>
-            <input id="input--last-name" type="text" name="lastName" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- --------------------------Last Name*---------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--last-name">
+                    <label class="label required" for="input--last-name">Last Name</label>
+                    <input id="input--last-name" type="text" name="lastName" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------First Name (Hebrew)*---------------------- -->
-            <label class="label required" for="input--first-name-hebrew">First Name (Hebrew)</label>
-            <input id="input--first-name-hebrew" type="text" name="firstNameHebrew" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------First Name (Hebrew)*---------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--first-name-hebrew">
+                    <label class="label required" for="input--first-name-hebrew">First Name (Hebrew)</label>
+                    <input id="input--first-name-hebrew" type="text" name="firstNameHebrew" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------Last Name (Hebrew)*----------------------- -->
-            <label class="label required" for="input--last-name-hebrew">Last Name (Hebrew)</label>
-            <input id="input--last-name-hebrew" type="text" name="lastNameHebrew" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------Last Name (Hebrew)*----------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--last-name-hebrew">
+                    <label class="label required" for="input--last-name-hebrew">Last Name (Hebrew)</label>
+                    <input id="input--last-name-hebrew" type="text" name="lastNameHebrew" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ---------------------------Email*------------------------------- -->
-            <label class="label required" for="input--email">Email</label>
-            <input id="input--email" type="email" name="email" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ---------------------------Email*------------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--email">
+                    <label class="label required" for="input--email">Email</label>
+                    <input id="input--email" type="email" name="email" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------Phone*------------------------------ -->
-            <label class="label required" for="input--phone">Phone</label>
-            <input id="input--phone" type="tel" name="phone" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------Phone*------------------------------ -->
+                <div role="presentation" class="info-form__item" id="info-form__item--phone">
+                    <label class="label required" for="input--phone">Phone</label>
+                    <input id="input--phone" type="tel" name="phone" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------Street------------------------------ -->
-            <label class="label" for="input--street">Street</label>
-            <input id="input--street" type="text" name="street" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------Street------------------------------ -->
+                <div role="presentation" class="info-form__item" id="info-form__item--street">
+                    <label class="label" for="input--street">Street</label>
+                    <input id="input--street" type="text" name="street" />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------City*------------------------------- -->
-            <label class="label required" for="input--city">City</label>
-            <input id="input--city" type="text" name="city" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------City*------------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--city">
+                    <label class="label required" for="input--city">City</label>
+                    <input id="input--city" type="text" name="city" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------Country*---------------------------- -->
-            <label class="label required" for="input--country">Country</label>
-            <input id="input--country" type="text" name="country" required />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------State------------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--state">
+                    <label class="label" for="input--state">State</label>
+                    <input id="input--state" type="text" name="state" />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------State------------------------------- -->
-            <label class="label" for="input--state">State</label>
-            <input id="input--state" type="text" name="state" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------Country*---------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--country">
+                    <label class="label required" for="input--country">Country</label>
+                    <input id="input--country" type="text" name="country" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- -------------------------Postal Code-----------===-------------- -->
-            <label class="label" for="input--postal-code">Postal Code</label>
-            <input id="input--postal-code" type="text" name="postalCode" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------LinkedIn---------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--linkedin">
+                    <label class="label" for="input--linkedin">LinkedIn</label>
+                    <input id="input--linkedin" type="url" name="linkedin" />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------LinkedIn---------------------------- -->
-            <label class="label" for="input--linkedin">LinkedIn</label>
-            <input id="input--linkedin" type="url" name="linkedin" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------GitHub------------------------------ -->
+                <div role="presentation" class="info-form__item" id="info-form__item--github">
+                    <label class="label" for="input--github">GitHub</label>
+                    <input id="input--github" type="url" name="github" />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------GitHub------------------------------ -->
-            <label class="label" for="input--github">GitHub</label>
-            <input id="input--github" type="url" name="github" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------Portfolio---------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--portfolio">
+                    <label class="label" for="input--portfolio">Portfolio</label>
+                    <input id="input--portfolio" type="url" name="portfolio" />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------Portfolio---------------------------- -->
-            <label class="label" for="input--portfolio">Portfolio</label>
-            <input id="input--portfolio" type="url" name="portfolio" />
-            <!-- ---------------------------------------------------------------- -->
+                <!-- ----------------------------CV/Resume*-------------------------- -->
+                <div role="presentation" class="info-form__item" id="info-form__item--cv">
+                    <label class="label required" for="input--cv">CV/Resume</label>
+                    <input id="input--cv" type="file" name="cv" accept=".doc,.docx,.pdf" required />
+                </div>
+                <!-- ---------------------------------------------------------------- -->
 
-            <!-- ----------------------------CV/Resume*-------------------------- -->
-            <label class="label required" for="input--cv">CV/Resume</label>
-            <input id="input--cv" type="file" name="cv" accept=".doc,.docx,.pdf" required />
-            <!-- ---------------------------------------------------------------- -->
-
-            <button id="btn--save-info" class="btn" type="submit">Save Info</button>
-        </form>
+                <div role="presentation" id="info-form__item--submit">
+                    <button id="btn--save-info" class="btn" type="submit">Save Info</button>
+                </div>
+            </form>
+        </main>
         <script src="../scripts/form-handler.js" type="module"></script>
     </body>
 </html>

@@ -6,7 +6,7 @@ function populateFormWithSavedData() {
         if (!items.info) return;
 
         const info = items.info;
-        const form = document.getElementById("form--edit-info");
+        const form = document.getElementById("form--info-form");
         const inputs = form.querySelectorAll("input");
         inputs.forEach((input) => {
             if (input.type === "file") {
@@ -51,4 +51,4 @@ async function saveFormData(e) {
 window.addEventListener("load", populateFormWithSavedData);
 
 // Event listener for form submit to save data
-document.getElementById("form--edit-info").addEventListener("submit", saveFormData);
+document.getElementById("form--info-form").addEventListener("submit", saveFormData);

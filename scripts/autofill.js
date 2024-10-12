@@ -15,7 +15,6 @@ function getInputFieldsKeywords() {
         city: ["city", "town", "location"],
         country: ["country"],
         state: ["state", "province", "region"],
-        postalCode: ["postal code", "zip code", "postcode"],
 
         linkedin: ["linkedin", "linkedin url", "linkedin-url"],
         github: ["github", "github url", "github-url"],
