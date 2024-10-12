@@ -2,6 +2,12 @@
     "name": "JobApply Autofill",
     "author": "Maor Bezalel",
     "description": "Automatically fills job application forms with your saved information, saving you time on repetitive entries.",
+    "icons": {
+        "16": "assets/icons/icon16.png",
+        "32": "assets/icons/icon32.png",
+        "48": "assets/icons/icon48.png",
+        "128": "assets/icons/icon128.png"
+    },
 
     "manifest_version": 3,
     "version": "1.0.0",

@@ -45,3 +45,7 @@ Chrome Extension for automatically filling job application forms with pre-saved 
 ## LICENSE
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Credits
+
+-   [Flaticon:](https://www.flaticon.com/) For the extension icon. Can be found [here](https://www.flaticon.com/free-icon/application_2245126?term=job+application&page=1&position=2&origin=tag&related_id=2245126)
