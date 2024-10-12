@@ -7,7 +7,7 @@
     "version": "1.0.0",
 
     "host_permissions": ["*://*/*"],
-    "permissions": ["scripting", "contextMenus", "storage", "activeTab"],
+    "permissions": ["scripting", "storage", "activeTab"],
 
     "action": {
         "default_popup": "views/popup.html"
